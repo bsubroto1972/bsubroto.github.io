@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Magnus | Creating Artful Spaces</title>
-    <!-- Premium Font Integration -->
+    <!-- Google Fonts for Corporate High-End Editorial Typography -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,15 +12,15 @@
         :root {
             --brand-teal: #49B6B4;   
             --brand-gold: #F6BC3B;   
-            --brand-dark: #2C2C2E;   
-            --light-bg: #FAFAFA;     
+            --brand-dark: #2A2A2B;   
+            --light-bg: #F4F7F6;     
             --card-bg: #FFFFFF;
         }
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth; /* Makes all menu buttons scroll smoothly down */
+            scroll-behavior: smooth;
         }
         body {
             font-family: 'Montserrat', sans-serif;
@@ -28,7 +28,7 @@
             color: var(--brand-dark);
             line-height: 1.7;
         }
-        /* Fixed Luxury Navigation Bar */
+        /* Sticky Navigation Bar Configs */
         header {
             background-color: #FFFFFF;
             border-bottom: 1px solid #EDEDED;
@@ -58,17 +58,17 @@
         .nav-links a:hover {
             color: var(--brand-teal);
         }
-        /* HomeLane-Inspired Elegant Hero Section (Bright & Inviting) */
+        /* Crisp Clean Hero Header Section */
         .hero {
-            background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.92)), url('https://unsplash.com') no-repeat center center/cover;
-            min-height: 80vh;
+            background: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.94)), url('https://unsplash.com') no-repeat center center/cover;
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 80px 20px;
-            border-bottom: 1px solid #E5E5E5;
+            border-bottom: 1px solid #EAEAEA;
         }
         .hero-logo {
             height: 120px;
@@ -77,7 +77,7 @@
         }
         .hero h1 {
             font-family: 'Cinzel', serif;
-            font-size: 48px;
+            font-size: 50px;
             font-weight: 800;
             letter-spacing: 2px;
             color: var(--brand-dark);
@@ -86,17 +86,16 @@
         .hero .tagline {
             font-size: 20px;
             text-transform: uppercase;
-            letter-spacing: 5px;
-            color: #CBB06D; /* Tailored Warm Gold */
+            letter-spacing: 6px;
+            color: var(--brand-gold);
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .hero p {
             font-size: 18px;
-            max-width: 750px;
+            max-width: 800px;
             color: #555557;
             margin-bottom: 35px;
-            font-weight: 400;
         }
         .cta-btn {
             background-color: var(--brand-teal);
@@ -114,9 +113,35 @@
         .cta-btn:hover {
             background-color: #3aa19f;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(73, 182, 180, 0.4);
         }
-        /* Layout Padding Section Architecture */
+        /* HomeLane Strategic Trust Metrics Bar Layout */
+        .trust-bar {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #EDEDED;
+            padding: 45px 6%;
+            text-align: center;
+        }
+        .trust-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+        .trust-item h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 30px;
+            color: var(--brand-teal);
+            margin-bottom: 5px;
+        }
+        .trust-item p {
+            font-size: 13px;
+            font-weight: 700;
+            color: #777779;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        /* Main Features Segment Layout */
         .section-container {
             padding: 100px 6%;
             max-width: 1400px;
@@ -124,7 +149,7 @@
         }
         .section-title {
             font-family: 'Cinzel', serif;
-            font-size: 34px;
+            font-size: 36px;
             text-align: center;
             margin-bottom: 15px;
             font-weight: 600;
@@ -132,20 +157,19 @@
             color: var(--brand-dark);
         }
         .subtitle-line {
-            width: 60px;
+            width: 70px;
             height: 3px;
             background: var(--brand-teal);
-            margin: 0 auto 50px;
+            margin: 0 auto 60px;
         }
-        /* Grid Alignment Matrix */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            gap: 35px;
         }
         .card {
             background: var(--card-bg);
-            padding: 45px 30px;
+            padding: 55px 35px;
             border-radius: 4px;
             border: 1px solid #ECECEC;
             text-align: center;
@@ -154,32 +178,42 @@
         .card:hover {
             transform: translateY(-5px);
             border-color: var(--brand-teal);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.04);
         }
         .card h3 {
-            font-size: 21px;
+            font-size: 22px;
             margin-bottom: 15px;
             font-weight: 600;
-            letter-spacing: 0.5px;
         }
         .card p {
             font-size: 15px;
             color: #666668;
         }
-        /* Premium Showcase Portfolio Gallery Box System */
+        /* Design Portfolio Cards Row Grid Architecture */
+        .gallery-section {
+            background-color: #FAFAFB;
+            border-top: 1px solid #EDEDED;
+            border-bottom: 1px solid #EDEDED;
+            padding: 100px 6%;
+        }
         .gallery-grid {
+            max-width: 1400px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-            gap: 25px;
-            margin-top: 20px;
+            gap: 30px;
         }
         .gallery-item {
-            background-color: #F0F0F0;
+            background: #FFFFFF;
             border-radius: 4px;
             overflow: hidden;
-            height: 320px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
             border: 1px solid #EAEAEA;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+        }
+        .gallery-image-wrapper {
+            height: 290px;
+            overflow: hidden;
+            background-color: #EAEAEA;
         }
         .gallery-item img {
             width: 100%;
@@ -189,23 +223,23 @@
             transition: transform 0.4s ease;
         }
         .gallery-item:hover img {
-            transform: scale(1.05);
+            transform: scale(1.04);
         }
         .gallery-caption {
-            padding: 15px;
-            background: #FFFFFF;
-            border-top: 1px solid #ECECEC;
+            padding: 22px;
             text-align: center;
+            border-top: 1px solid #ECECEC;
         }
         .gallery-caption h4 {
             font-size: 16px;
             font-weight: 600;
             color: var(--brand-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        /* Corporate Studio Desk Footer Area & Form Layout */
+        /* Enterprise Contact Layout Area */
         .contact-section {
-            background-color: #F9F9FB;
-            border-top: 1px solid #EDEDED;
+            background-color: #FFFFFF;
             padding: 100px 6%;
         }
         .contact-container {
@@ -213,19 +247,19 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 50px;
+            gap: 60px;
             align-items: center;
         }
         .contact-info h2 {
             font-family: 'Cinzel', serif;
-            font-size: 34px;
+            font-size: 36px;
             margin-bottom: 20px;
             color: var(--brand-dark);
         }
         .contact-info p {
             font-size: 16px;
             color: #555557;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
         .info-row {
             margin-bottom: 15px;
@@ -235,13 +269,11 @@
         .info-row strong {
             color: var(--brand-teal);
         }
-        /* Clean Input Box Configurations */
         .contact-form form {
-            background: #FFFFFF;
+            background: #FAFAFB;
             padding: 40px;
             border-radius: 4px;
             border: 1px solid #E2E2E2;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
         }
         .form-group {
             margin-bottom: 20px;
@@ -249,24 +281,22 @@
         .form-group input, .form-group textarea {
             width: 100%;
             padding: 14px;
-            background: #FAFAFA;
+            background: #FFFFFF;
             border: 1px solid #D1D1D6;
             border-radius: 4px;
             color: var(--brand-dark);
             font-family: 'Montserrat', sans-serif;
             font-size: 14px;
-            transition: border 0.3s;
         }
         .form-group input:focus, .form-group textarea:focus {
             border-color: var(--brand-teal);
             outline: none;
-            background: #FFFFFF;
         }
         .submit-btn {
             background-color: var(--brand-dark);
             color: white;
             width: 100%;
-            padding: 15px;
+            padding: 16px;
             border: none;
             border-radius: 4px;
             font-weight: 700;
@@ -280,32 +310,17 @@
             background-color: var(--brand-teal);
         }
         footer {
-            background-color: #FFFFFF;
+            background-color: #1F1F20;
             color: #8E8E93;
             text-align: center;
-            padding: 35px;
+            padding: 40px;
             font-size: 13px;
-            border-top: 1px solid #EDEDED;
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Sticky Navigation Bar -->
+    <!-- Header Navigation Section Bar -->
     <header>
         <img src="IMG_7045.jpg" alt="Interior Magnus Logo" class="header-logo">
         <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Clean, Open Hero Space -->
-    <section class="hero" id="home">
-        <img src="IMG_7045.jpg" alt="Interior Magnus Emblem" class="hero-logo">
-        <h1>INTERIOR MAGNUS</h1>
-        <div class="tagline">Creating Artful Spaces</div>
-        <p>A premium design studio delivering custom end-to-end residential interiors, workspace architecture, and complete modular execution configurations tailored perfectly to your lifestyle.</p>
-        <a href="#contact" class="cta-btn">Inquire Now</a>
