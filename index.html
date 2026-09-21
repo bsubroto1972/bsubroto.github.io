@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Magnus | Creating Artful Spaces</title>
+    <!-- Premium Google Fonts for Luxury Editorial Branding -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -15,190 +19,230 @@
             font-family: 'Montserrat', Arial, sans-serif;
             background-color: #FFFFFF;
             color: #2A2A2B;
-            line-height: 1.6;
+            line-height: 1.8;
         }
-        /* Sticky Navigation Header bar layout */
+        /* High-End Sticky Header Navigation */
         header {
             background-color: #FFFFFF;
             border-bottom: 2px solid #49B6B4;
-            padding: 20px 6%;
+            padding: 15px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
         }
         .header-logo {
-            font-size: 22px;
-            font-weight: 800;
-            color: #2A2A2B;
-            letter-spacing: 0.5px;
-        }
-        .header-logo span {
-            color: #49B6B4;
+            height: 60px; /* Custom sizing for your branding logo image */
+            width: auto;
+            display: block;
         }
         .nav-links a {
             color: #2A2A2B;
             text-decoration: none;
-            margin-left: 30px;
-            font-weight: 600;
-            font-size: 14px;
+            margin-left: 40px;
+            font-weight: 700;
+            font-size: 15px;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
         }
         .nav-links a:hover {
             color: #49B6B4;
         }
-        /* Bright Elegant HomeLane-Style Hero Section */
+        /* Modern Bright Hero Section */
         .hero {
             background-color: #F4F7F6;
-            padding: 90px 6%;
+            padding: 100px 8%;
             text-align: center;
             border-bottom: 1px solid #EAEAEA;
         }
-        .hero h1 {
-            font-size: 46px;
-            font-weight: 800;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-        .hero .tagline {
-            font-size: 18px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: #F6BC3B;
-            font-weight: 700;
+        .hero-logo {
+            height: 120px;
+            width: auto;
             margin-bottom: 25px;
         }
-        .hero p {
-            font-size: 17px;
-            max-width: 750px;
-            color: #555557;
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 54px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+            color: #2A2A2B;
+        }
+        .hero .tagline {
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: #F6BC3B;
+            font-weight: 700;
             margin-bottom: 30px;
+        }
+        .hero p {
+            font-size: 19px;
+            max-width: 800px;
+            color: #555557;
+            margin-bottom: 40px;
             margin-left: auto;
             margin-right: auto;
         }
         .cta-btn {
             background-color: #49B6B4;
             color: white;
-            padding: 15px 40px;
+            padding: 16px 45px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 13px;
+            letter-spacing: 1.5px;
+            font-size: 14px;
             display: inline-block;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(73, 182, 180, 0.3);
         }
-        /* Design Capabilities Segment */
+        .cta-btn:hover {
+            background-color: #3aa19f;
+            transform: translateY(-2px);
+        }
+        /* Capabilities Matrix Section */
         .section-container {
-            padding: 90px 6%;
-            max-width: 1200px;
+            padding: 110px 8%;
+            max-width: 1400px;
             margin: 0 auto;
         }
         .section-title {
-            font-size: 32px;
+            font-family: 'Cinzel', serif;
+            font-size: 38px;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 15px;
             font-weight: 700;
-            text-transform: uppercase;
             letter-spacing: 1px;
+        }
+        .subtitle-line {
+            width: 70px;
+            height: 3px;
+            background: #49B6B4;
+            margin: 0 auto 60px;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
         }
         .card {
             background: #FFFFFF;
-            padding: 40px 30px;
-            border-radius: 4px;
-            border: 1px solid #ECECEC;
+            padding: 55px 35px;
+            border-radius: 6px;
+            border: 1px solid #EAEAEA;
             text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #49B6B4;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
         }
         .card h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 700;
             color: #2A2A2B;
         }
         .card p {
-            font-size: 15px;
-            color: #666668;
-        }
-        /* Project Inquiry Contact Layout Grid */
-        .contact-section {
-            background-color: #FAFAFB;
-            border-top: 1px solid #EDEDED;
-            padding: 90px 6%;
-        }
-        .contact-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 50px;
-        }
-        .contact-info h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .contact-info p {
             font-size: 16px;
             color: #555557;
-            margin-bottom: 25px;
+        }
+        /* Project Inquiry Contact Workspace */
+        .contact-section {
+            background-color: #F9F9FB;
+            border-top: 1px solid #EDEDED;
+            padding: 110px 8%;
+        }
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 60px;
+            align-items: center;
+        }
+        .contact-info h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 38px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .contact-info p {
+            font-size: 17px;
+            color: #555557;
+            margin-bottom: 35px;
         }
         .info-row {
-            margin-bottom: 15px;
-            font-size: 16px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            color: #3A3A3C;
         }
         .info-row strong {
             color: #49B6B4;
         }
         .contact-form form {
             background: #FFFFFF;
-            padding: 35px;
-            border-radius: 4px;
+            padding: 45px;
+            border-radius: 6px;
             border: 1px solid #E2E2E2;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
         }
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .form-group input, .form-group textarea {
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             background: #FAFAFB;
             border: 1px solid #D1D1D6;
             border-radius: 4px;
             font-family: inherit;
-            font-size: 14px;
+            font-size: 15px;
+            color: #2A2A2B;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #49B6B4;
+            outline: none;
+            background: #FFFFFF;
         }
         .submit-btn {
             background-color: #2A2A2B;
             color: white;
             width: 100%;
-            padding: 14px;
+            padding: 16px;
             border: none;
             border-radius: 4px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: 13px;
+            font-size: 14px;
             cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .submit-btn:hover {
+            background-color: #49B6B4;
         }
         footer {
             background-color: #1F1F20;
             color: #8E8E93;
             text-align: center;
-            padding: 30px;
-            font-size: 13px;
+            padding: 40px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Navigation Bar Layout -->
+    <!-- Sticky Branding Navigation Header -->
     <header>
-        <div class="header-logo">INTERIOR <span>MAGNUS</span></div>
+        <img src="IMG_7045.jpg" alt="Interior Magnus Logo" class="header-logo">
         <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
@@ -206,17 +250,19 @@
         </nav>
     </header>
 
-    <!-- Main Workspace Hero Layout -->
+    <!-- Main Workspace Hero Panel -->
     <section class="hero" id="home">
+        <img src="IMG_7045.jpg" alt="Interior Magnus Badge" class="hero-logo">
         <h1>INTERIOR MAGNUS</h1>
         <div class="tagline">Creating Artful Spaces</div>
         <p>A premium design studio delivering custom end-to-end residential interiors, functional modular workspace transformations, and complete construction executions mapped around elite property layout briefs.</p>
         <a href="#contact" class="cta-btn">Book Free Consultation</a>
     </section>
 
-    <!-- Capabilities Matrix Cards Grid -->
+    <!-- Capabilities Section -->
     <section class="section-container" id="services">
         <h2 class="section-title">Our Capabilities</h2>
+        <div class="subtitle-line"></div>
         <div class="grid">
             <div class="card">
                 <h3>Bespoke Residential</h3>
@@ -233,7 +279,7 @@
         </div>
     </section>
 
-    <!-- Studio Lead Consultation Module Section -->
+    <!-- Consultation Contact Form Desk -->
     <section class="contact-section" id="contact">
         <div class="contact-container">
             <div class="contact-info">
@@ -243,29 +289,3 @@
                 <div class="info-row"><strong>Studio Address:</strong> Noida, Uttar Pradesh, India</div>
             </div>
             <div class="contact-form">
-                <form action="https://formspree.io" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="phone" placeholder="Contact Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="4" placeholder="Tell us briefly about your property requirements..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Project Request</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Base Legal Block Footer -->
-    <footer>
-        &copy; 2026 Interior Magnus. All Rights Reserved. Managed securely via GitHub Corporate Web Infrastructure.
-    </footer>
-
-</body>
-</html>
