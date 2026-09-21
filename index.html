@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Magnus | Creating Artful Spaces</title>
+    <style>
+        :root {
+            --brand-teal: #49B6B4;   /* Matches the teal in your logo icon */
+            --brand-gold: #F6BC3B;   /* Matches the warm yellow/gold in your logo icon */
+            --brand-dark: #404041;   /* Matches the charcoal gray used for "Interior Magnus" text */
+            --light-bg: #FDFDFD;     /* Off-white background */
+            --card-bg: #FFFFFF;
+        }
+        body {
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--brand-dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: #FFFFFF;
+            border-bottom: 3px solid var(--brand-teal);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo-text {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--brand-dark);
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: var(--brand-teal);
+        }
+        .nav-links a {
+            color: var(--brand-dark);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--brand-teal);
+        }
+        .hero {
+            background: linear-gradient(rgba(64, 64, 65, 0.75), rgba(64, 64, 65, 0.75)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 5px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .hero .tagline {
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--brand-gold);
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .cta-btn {
+            background-color: var(--brand-teal);
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(73, 182, 180, 0.4);
+        }
+        .cta-btn:hover {
+            background-color: #3aa19f;
+            transform: translateY(-2px);
+        }
+        .services {
+            padding: 80px 5%;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--brand-dark);
+            font-weight: 700;
+        }
+        .subtitle-line {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--brand-teal), var(--brand-gold));
+            margin: 0 auto 50px;
+            border-radius: 2px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            border-top: 4px solid var(--brand-gold);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:nth-child(even) {
+            border-top: 4px solid var(--brand-teal);
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            color: var(--brand-dark);
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .contact {
+            background-color: var(--brand-dark);
+            color: white;
+            padding: 70px 5%;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .contact-email {
+            font-size: 22px;
+            color: var(--brand-gold);
+            font-weight: bold;
+            margin-top: 25px;
+            letter-spacing: 0.5px;
+        }
+        footer {
+            background-color: #2d2d2e;
+            color: #b5b5b7;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            border-top: 1px solid #4a4a4b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">INTERIOR <span>MAGNUS</span></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Interior Magnus</h1>
+        <div class="tagline">Creating Artful Spaces</div>
+        <p>An Interior Designing Company specializing in premium residential and commercial projects. We translate your vision into functional architectural masterworks.</p>
+        <a href="#contact" class="cta-btn">Book a Consultation</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="subtitle-line"></div>
+        <div class="grid">
+            <div class="card">
+                <h3>Residential Projects</h3>
+                <p>Tailored luxury configurations for homes, villas, and apartments designed around your personal aesthetic.</p>
+            </div>
+            <div class="card">
+                <h3>Commercial Spaces</h3>
+                <p>Innovative, smart office layouts and commercial interiors engineered for premium brand presentation.</p>
+            </div>
+            <div class="card">
+                <h3>Turnkey Solutions</h3>
+                <p>Complete project management from initial design layouts and material selection up to final execution.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Start Your Design Journey</h2>
+        <p>Ready to create your artful space? Reach out to the Interior Magnus design desk team today.</p>
+        <div class="contact-email">
+            Email: contact@interiormagnus.co.in
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Interior Magnus. All Rights Reserved. Managed securely via GitHub.
+    </footer>
+
+</body>
+</html>
