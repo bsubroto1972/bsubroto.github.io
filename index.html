@@ -4,217 +4,314 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Magnus | Creating Artful Spaces</title>
+    <!-- Google Fonts for High-End Luxury Typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand-teal: #49B6B4;   /* Matches the teal in your logo icon */
-            --brand-gold: #F6BC3B;   /* Matches the warm yellow/gold in your logo icon */
-            --brand-dark: #404041;   /* Matches the charcoal gray used for "Interior Magnus" text */
-            --light-bg: #FDFDFD;     /* Off-white background */
+            --brand-teal: #49B6B4;   
+            --brand-gold: #F6BC3B;   
+            --brand-dark: #2A2A2B;   
+            --light-bg: #FDFDFD;     
             --card-bg: #FFFFFF;
         }
-        body {
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
             background-color: var(--light-bg);
             color: var(--brand-dark);
-            line-height: 1.6;
+            line-height: 1.8;
         }
+        /* Luxury Header Navigation */
         header {
             background-color: #FFFFFF;
-            border-bottom: 3px solid var(--brand-teal);
-            padding: 15px 5%;
+            border-bottom: 1px solid #EAEAEA;
+            padding: 15px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
         }
-        .logo-text {
-            font-size: 26px;
-            font-weight: 800;
-            color: var(--brand-dark);
-            letter-spacing: -0.5px;
-        }
-        .logo-text span {
-            color: var(--brand-teal);
+        .header-logo {
+            height: 65px;
+            width: auto;
         }
         .nav-links a {
             color: var(--brand-dark);
             text-decoration: none;
-            margin-left: 25px;
+            margin-left: 35px;
             font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             transition: color 0.3s;
         }
         .nav-links a:hover {
             color: var(--brand-teal);
         }
+        /* High-Impact Premium Hero Section */
         .hero {
-            background: linear-gradient(rgba(64, 64, 65, 0.75), rgba(64, 64, 65, 0.75)), url('https://unsplash.com') no-repeat center center/cover;
-            height: 65vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://unsplash.com') no-repeat center center/cover;
+            min-height: 85vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
-            padding: 0 20px;
+            padding: 40px 20px;
+        }
+        .hero-logo {
+            height: 140px;
+            width: auto;
+            margin-bottom: 25px;
+            filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
         }
         .hero h1 {
-            font-size: 52px;
-            margin-bottom: 5px;
-            font-weight: 800;
-            letter-spacing: 1px;
+            font-family: 'Cinzel', serif;
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
         }
         .hero .tagline {
-            font-size: 22px;
+            font-size: 24px;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 6px;
             color: var(--brand-gold);
             font-weight: 700;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         .hero p {
-            font-size: 18px;
-            max-width: 700px;
-            margin-bottom: 30px;
+            font-size: 20px;
+            max-width: 800px;
+            margin-bottom: 40px;
             font-weight: 300;
+            light-height: 1.6;
         }
         .cta-btn {
             background-color: var(--brand-teal);
             color: white;
-            padding: 14px 35px;
+            padding: 16px 45px;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
+            border-radius: 50px;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background 0.3s, transform 0.2s;
-            box-shadow: 0 4px 15px rgba(73, 182, 180, 0.4);
+            letter-spacing: 2px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 25px rgba(73, 182, 180, 0.4);
         }
         .cta-btn:hover {
             background-color: #3aa19f;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(73, 182, 180, 0.6);
         }
-        .services {
-            padding: 80px 5%;
+        /* Services Section Layout */
+        .section-container {
+            padding: 100px 8%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 38px;
             text-align: center;
-        }
-        .services h2 {
-            font-size: 36px;
             margin-bottom: 15px;
-            color: var(--brand-dark);
             font-weight: 700;
+            letter-spacing: 1px;
         }
         .subtitle-line {
-            width: 60px;
+            width: 80px;
             height: 4px;
             background: linear-gradient(90deg, var(--brand-teal), var(--brand-gold));
-            margin: 0 auto 50px;
+            margin: 0 auto 60px;
             border-radius: 2px;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
         }
         .card {
             background: var(--card-bg);
-            padding: 40px 30px;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-            border-top: 4px solid var(--brand-gold);
-            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 50px 35px;
+            border-radius: 12px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.04);
+            border-top: 5px solid var(--brand-gold);
+            text-align: center;
+            transition: all 0.3s ease;
         }
         .card:nth-child(even) {
-            border-top: 4px solid var(--brand-teal);
+            border-top: 5px solid var(--brand-teal);
         }
         .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
         }
         .card h3 {
-            color: var(--brand-dark);
-            font-size: 22px;
-            margin-bottom: 15px;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
-        .contact {
-            background-color: var(--brand-dark);
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+        /* Stunning Inspiration Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 300px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-overlay h4 {
             color: white;
-            padding: 70px 5%;
-            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
-        .contact h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
+        /* Functional Studio Contact Form Layout */
+        .contact-section {
+            background-color: #1F1F20;
+            color: white;
+            padding: 90px 8%;
         }
-        .contact-email {
-            font-size: 22px;
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 60px;
+        }
+        .contact-info h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #FFF;
+        }
+        .contact-info p {
+            font-size: 16px;
+            color: #B0B0B2;
+            margin-bottom: 30px;
+        }
+        .info-details {
+            margin-top: 30px;
+        }
+        .info-row {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .info-row strong {
             color: var(--brand-gold);
-            font-weight: bold;
-            margin-top: 25px;
-            letter-spacing: 0.5px;
+        }
+        /* Modern Input Form fields */
+        .contact-form form {
+            background: #2A2A2B;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #3A3A3B;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            background: #1F1F20;
+            border: 1px solid #4A4A4B;
+            border-radius: 6px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--brand-teal);
+            outline: none;
+        }
+        .submit-btn {
+            background-color: var(--brand-teal);
+            color: white;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #3aa19f;
         }
         footer {
-            background-color: #2d2d2e;
-            color: #b5b5b7;
+            background-color: #151516;
+            color: #757577;
             text-align: center;
-            padding: 25px;
+            padding: 30px;
             font-size: 14px;
-            border-top: 1px solid #4a4a4b;
+            border-top: 1px solid #252526;
         }
     </style>
 </head>
 <body>
 
-    <img src="IMG_7045.jpg" alt="Interior Magnus Logo" style="height: 60px; width: auto;">
-
+    <header>
+        <img src="IMG_7045.jpg" alt="Interior Magnus Logo" class="header-logo">
         <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero" id="home">
-        <h1>Interior Magnus</h1>
+        <img src="IMG_7045.jpg" alt="Interior Magnus Badge" class="hero-logo">
+        <h1>INTERIOR MAGNUS</h1>
         <div class="tagline">Creating Artful Spaces</div>
-        <p>An Interior Designing Company specializing in premium residential and commercial projects. We translate your vision into functional architectural masterworks.</p>
-        <a href="#contact" class="cta-btn">Book a Consultation</a>
+        <p>A premium interior architecture and styling firm specializing in bespoke residential, modern commercial spaces, and seamless turnkey design executions.</p>
+        <a href="#contact" class="cta-btn">Inquire Now</a>
     </section>
 
-    <section class="services" id="services">
-        <h2>Our Services</h2>
+    <section class="section-container" id="services">
+        <h2 class="section-title">Our Capabilities</h2>
         <div class="subtitle-line"></div>
         <div class="grid">
-            <div class="card">
-                <h3>Residential Projects</h3>
-                <p>Tailored luxury configurations for homes, villas, and apartments designed around your personal aesthetic.</p>
-            </div>
-            <div class="card">
-                <h3>Commercial Spaces</h3>
-                <p>Innovative, smart office layouts and commercial interiors engineered for premium brand presentation.</p>
-            </div>
-            <div class="card">
-                <h3>Turnkey Solutions</h3>
-                <p>Complete project management from initial design layouts and material selection up to final execution.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Start Your Design Journey</h2>
-        <p>Ready to create your artful space? Reach out to the Interior Magnus design desk team today.</p>
-        <div class="contact-email">
-            Email: contact@interiormagnus.co.in
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2026 Interior Magnus. All Rights Reserved. Managed securely via GitHub.
-    </footer>
-
-</body>
-</html>
