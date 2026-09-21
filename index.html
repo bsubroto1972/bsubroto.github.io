@@ -4,18 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Magnus | Creating Artful Spaces</title>
-    <!-- High-End Typography Embedded Locally -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --brand-teal: #49B6B4;   
-            --brand-gold: #F6BC3B;   
-            --brand-dark: #2A2A2B;   
-            --light-bg: #F4F7F6;     
-            --card-bg: #FFFFFF;
-        }
         * {
             box-sizing: border-box;
             margin: 0;
@@ -23,72 +12,61 @@
             scroll-behavior: smooth;
         }
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', Arial, sans-serif;
             background-color: #FFFFFF;
-            color: var(--brand-dark);
-            line-height: 1.7;
+            color: #2A2A2B;
+            line-height: 1.6;
         }
-        /* HomeLane Premium Navigation Bar */
+        /* Sticky Navigation Header bar layout */
         header {
             background-color: #FFFFFF;
-            border-bottom: 1px solid #EDEDED;
-            padding: 15px 6%;
+            border-bottom: 2px solid #49B6B4;
+            padding: 20px 6%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
         }
         .header-logo {
-            height: 55px;
-            width: auto;
+            font-size: 22px;
+            font-weight: 800;
+            color: #2A2A2B;
+            letter-spacing: 0.5px;
+        }
+        .header-logo span {
+            color: #49B6B4;
         }
         .nav-links a {
-            color: var(--brand-dark);
+            color: #2A2A2B;
             text-decoration: none;
-            margin-left: 35px;
+            margin-left: 30px;
             font-weight: 600;
             font-size: 14px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
         }
         .nav-links a:hover {
-            color: var(--brand-teal);
+            color: #49B6B4;
         }
-        /* Bright Premium Studio Hero Block (Zero Broken Remote Images) */
+        /* Bright Elegant HomeLane-Style Hero Section */
         .hero {
-            background: linear-gradient(135deg, #F4F7F6 0%, #E9EFF1 100%);
-            min-height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background-color: #F4F7F6;
+            padding: 90px 6%;
             text-align: center;
-            padding: 60px 20px;
             border-bottom: 1px solid #EAEAEA;
-            position: relative;
-        }
-        .hero-logo {
-            height: 110px;
-            width: auto;
-            margin-bottom: 20px;
         }
         .hero h1 {
-            font-family: 'Cinzel', serif;
             font-size: 46px;
             font-weight: 800;
-            letter-spacing: 2px;
-            color: var(--brand-dark);
             margin-bottom: 10px;
+            letter-spacing: 1px;
         }
         .hero .tagline {
             font-size: 18px;
             text-transform: uppercase;
-            letter-spacing: 6px;
-            color: var(--brand-gold);
+            letter-spacing: 5px;
+            color: #F6BC3B;
             font-weight: 700;
             margin-bottom: 25px;
         }
@@ -97,203 +75,108 @@
             max-width: 750px;
             color: #555557;
             margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .cta-btn {
-            background-color: var(--brand-teal);
+            background-color: #49B6B4;
             color: white;
             padding: 15px 40px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             font-size: 13px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(73, 182, 180, 0.3);
+            display: inline-block;
         }
-        .cta-btn:hover {
-            background-color: #3aa19f;
-            transform: translateY(-2px);
-        }
-        /* HomeLane Corporate Trust Metric Dashboard Bar */
-        .trust-bar {
-            background-color: #FFFFFF;
-            border-bottom: 1px solid #EDEDED;
-            padding: 40px 6%;
-            text-align: center;
-        }
-        .trust-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-        }
-        .trust-item h3 {
-            font-family: 'Cinzel', serif;
-            font-size: 30px;
-            color: var(--brand-teal);
-            margin-bottom: 5px;
-        }
-        .trust-item p {
-            font-size: 13px;
-            font-weight: 700;
-            color: #777779;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-        }
-        /* Structured Segment Containers */
+        /* Design Capabilities Segment */
         .section-container {
             padding: 90px 6%;
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         .section-title {
-            font-family: 'Cinzel', serif;
-            font-size: 34px;
+            font-size: 32px;
             text-align: center;
-            margin-bottom: 15px;
-            font-weight: 600;
+            margin-bottom: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
             letter-spacing: 1px;
-            color: var(--brand-dark);
-        }
-        .subtitle-line {
-            width: 60px;
-            height: 3px;
-            background: var(--brand-teal);
-            margin: 0 auto 50px;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
         .card {
-            background: var(--card-bg);
-            padding: 50px 35px;
+            background: #FFFFFF;
+            padding: 40px 30px;
             border-radius: 4px;
             border: 1px solid #ECECEC;
             text-align: center;
-            transition: all 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--brand-teal);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.04);
         }
         .card h3 {
-            font-size: 21px;
+            font-size: 20px;
             margin-bottom: 15px;
-            font-weight: 600;
+            color: #2A2A2B;
         }
         .card p {
             font-size: 15px;
             color: #666668;
         }
-        /* Safe Solid Portfolio Architecture Boxes */
-        .gallery-section {
+        /* Project Inquiry Contact Layout Grid */
+        .contact-section {
             background-color: #FAFAFB;
             border-top: 1px solid #EDEDED;
-            border-bottom: 1px solid #EDEDED;
-            padding: 90px 6%;
-        }
-        .gallery-grid {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 30px;
-        }
-        .gallery-item {
-            background: #FFFFFF;
-            border-radius: 4px;
-            border: 1px solid #EAEAEA;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-            transition: transform 0.3s ease;
-        }
-        .gallery-item:hover {
-            transform: translateY(-4px);
-            border-color: var(--brand-gold);
-        }
-        .gallery-box-icon {
-            font-size: 40px;
-            color: var(--brand-teal);
-            margin-bottom: 15px;
-        }
-        .gallery-item h4 {
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--brand-dark);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 10px;
-        }
-        .gallery-item p {
-            font-size: 14px;
-            color: #777;
-        }
-        /* Lead Capture & Form Grid */
-        .contact-section {
-            background-color: #FFFFFF;
             padding: 90px 6%;
         }
         .contact-container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 60px;
-            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 50px;
         }
         .contact-info h2 {
-            font-family: 'Cinzel', serif;
-            font-size: 34px;
+            font-size: 32px;
             margin-bottom: 20px;
-            color: var(--brand-dark);
         }
         .contact-info p {
             font-size: 16px;
             color: #555557;
-            margin-bottom: 35px;
+            margin-bottom: 25px;
         }
         .info-row {
             margin-bottom: 15px;
             font-size: 16px;
-            color: #3A3A3C;
         }
         .info-row strong {
-            color: var(--brand-teal);
+            color: #49B6B4;
         }
         .contact-form form {
-            background: #FAFAFB;
-            padding: 40px;
+            background: #FFFFFF;
+            padding: 35px;
             border-radius: 4px;
             border: 1px solid #E2E2E2;
         }
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .form-group input, .form-group textarea {
             width: 100%;
-            padding: 14px;
-            background: #FFFFFF;
+            padding: 12px;
+            background: #FAFAFB;
             border: 1px solid #D1D1D6;
             border-radius: 4px;
-            color: var(--brand-dark);
-            font-family: 'Montserrat', sans-serif;
+            font-family: inherit;
             font-size: 14px;
         }
-        .form-group input:focus, .form-group textarea:focus {
-            border-color: var(--brand-teal);
-            outline: none;
-        }
         .submit-btn {
-            background-color: var(--brand-dark);
+            background-color: #2A2A2B;
             color: white;
             width: 100%;
-            padding: 16px;
+            padding: 14px;
             border: none;
             border-radius: 4px;
             font-weight: 700;
@@ -301,30 +184,88 @@
             letter-spacing: 1px;
             font-size: 13px;
             cursor: pointer;
-            transition: background 0.3s;
-        }
-        .submit-btn:hover {
-            background-color: var(--brand-teal);
         }
         footer {
             background-color: #1F1F20;
             color: #8E8E93;
             text-align: center;
-            padding: 40px;
+            padding: 30px;
             font-size: 13px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Main Navigation Header Menu -->
+    <!-- Top Navigation Bar Layout -->
     <header>
-        <img src="IMG_7045.jpg" alt="Interior Magnus Logo" class="header-logo">
+        <div class="header-logo">INTERIOR <span>MAGNUS</span></div>
         <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <!-- Main Workspace Hero Layout -->
+    <section class="hero" id="home">
+        <h1>INTERIOR MAGNUS</h1>
+        <div class="tagline">Creating Artful Spaces</div>
+        <p>A premium design studio delivering custom end-to-end residential interiors, functional modular workspace transformations, and complete construction executions mapped around elite property layout briefs.</p>
+        <a href="#contact" class="cta-btn">Book Free Consultation</a>
+    </section>
+
+    <!-- Capabilities Matrix Cards Grid -->
+    <section class="section-container" id="services">
+        <h2 class="section-title">Our Capabilities</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Bespoke Residential</h3>
+                <p>Custom interior configurations for modern architectural living rooms, luxury apartment master suites, and high-end villa property overhauls tailored cleanly to match your family goals.</p>
+            </div>
+            <div class="card">
+                <h3>Commercial Offices</h3>
+                <p>Ergonomically balanced corporate workspaces, boutique retail presentation environments, and innovative executive office layouts optimized for productivity and brand value.</p>
+            </div>
+            <div class="card">
+                <h3>Turnkey Architecture</h3>
+                <p>Complete project management convenience spanning initial 2D floor plans, material palette curation, fiscal tracking updates, up to final on-site craftsmanship execution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Lead Consultation Module Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Start Your Design Brief</h2>
+                <p>Ready to transition your upcoming construction project or private residence into an artful architectural masterwork? Contact the Interior Magnus project desk to book an initial design review sequence or property layout evaluation.</p>
+                <div class="info-row"><strong>Design Desk Mail:</strong> contact@interiormagnus.co.in</div>
+                <div class="info-row"><strong>Studio Address:</strong> Noida, Uttar Pradesh, India</div>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="Contact Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="4" placeholder="Tell us briefly about your property requirements..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Project Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Base Legal Block Footer -->
+    <footer>
+        &copy; 2026 Interior Magnus. All Rights Reserved. Managed securely via GitHub Corporate Web Infrastructure.
+    </footer>
+
+</body>
+</html>
